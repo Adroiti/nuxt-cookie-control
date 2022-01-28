@@ -107,7 +107,7 @@ export default {
       this.cookies.set({name: 'cookie_control_enabled_cookies', value: consent ? enabledCookies.join(',') : '', expires: this.expirationDate});
       if(!reload){
         this.cookies.setConsent()
-        this.$cookiesControlControl.modal = false;
+        this.$cookiesControl.modal = false;
       } else window.location.reload(true);
     },
 
